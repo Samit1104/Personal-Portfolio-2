@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+    color: white;
+}
+
+:root{
+    /*Background Colors*/
+    --bg-primary-color: #000000;
+    --bg-Secondary-color: #A1A1AA;
+}
+
+
+/* body{
+    background-color: var(--bg-primary-color);
+} */
+
+body {
+  background-color: #09090b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  overflow-x: hidden;
+}
+
+/* MAIN CONTAINER */
+.main {
+  width: 100%;
+  max-width: 850px;   /* 👈 this is IMPORTANT */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+   /* 👈 centers all text */
+}
+
+
+.personalInfo > * {
+  padding: 6px 0px;
+}
+
+#name{
+    font-size:x-large;
+}
+
+#location, #college, .p, .durtion, .c, #s, .more, a{
+    color: var(--bg-Secondary-color);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.projects-title {
+  grid-column: 1 / -1; /* title full width */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project {
+  padding: 1rem;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+}
+
+.contactDetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c{
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    height: 2px;
+    background-color: var(--bg-Secondary-color);
+    width:auto;
+}
+
+
+.projectsHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.more{
+    cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project1,
+.project2 {
+  /* padding: 1rem; */
+  padding: 1rem;
+  border: 1px solid ; 
+  border-radius: 10px;       
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.project1:hover,
+.project2:hover {
+  border-color: var(--bg-Secondary-color);
+  transform: translateY(2px); /* optional polish */
+}
+
+.more:hover{
+    color: white;
+    /* border-radius: 2%; */
+}
+
+a:hover{
+    color: white;
+}
+
+
+@media (max-width: 640px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .contactDetails {
+    flex-direction: column;
+    gap: 10px;
+  }
+  body {
+    padding: 2rem 1rem;
+  }
+  .main {
+    width: 100%;
+    word-wrap: break-word; 
+  }
+}
