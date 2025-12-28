@@ -104,8 +104,7 @@ img {
   height: auto;
 }
 
-.project1,
-.project2 {
+.project{
   /* padding: 1rem; */
   padding: 1rem;
   border: 1px solid ; 
@@ -114,8 +113,7 @@ img {
   cursor: pointer;
 }
 
-.project1:hover,
-.project2:hover {
+.project:hover {
   border-color: var(--bg-Secondary-color);
   transform: translateY(2px); /* optional polish */
 }
