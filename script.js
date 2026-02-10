@@ -17,10 +17,10 @@ let addProjects = (projectLink, projectName, projectDuration, projectDescription
 
 // Adding Projects
 addProjects(
-  "https://samitsinghportfolio.vercel.app/",
-  "PersonalPortfolio",
+  "https://password-generator-orcin-sigma-21.vercel.app/",
+  "Password Generator",
   "September, 2025",
-  "Minimalist personal website with responsive design"
+  "Built a customizable Password Generator with adjustable length"
 );
 
 addProjects(
