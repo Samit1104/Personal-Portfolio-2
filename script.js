@@ -30,6 +30,12 @@ addProjects(
   "Classic Snake game with mobile controls"
 );
 
+addProjects(
+  "https://world-atlas-phi-two.vercel.app/",
+  "WorldAtlas",
+  "Feburary, 2026",
+  "Explore the world, One Country at a Time."
+)
 
 // Rendering Projects On UI
 projects.forEach((project) => {
